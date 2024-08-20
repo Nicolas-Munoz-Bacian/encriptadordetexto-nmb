@@ -1,0 +1,52 @@
+<html lang="es"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/Sello Nicolás (PNG).png" type="image/x-icon">
+  </head>
+  <body>
+    <div class="container">
+    <header class="header">
+      <img class="logo_Nicolás" src="img/Sello Nicolás (PNG).png" alt="Logo personal Nicolás">
+    </header>
+    <main class="main__container">
+      <form class="form">
+        <textarea class="form__frase" id="frase" placeholder="Ingrese encriptar o desencriptar aquí" required=""></textarea>
+        <div class="form__sugerencia">
+          <span class="form__icon"><img src="img/signo-de-exclamacion.png" alt="signo de exclamacion"></span>
+          <p class="form__parrafo">Solo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="btn__container">
+          <input class="btn btn-encriptar" id="btn-encriptar" type="button" value="Encriptar">
+          <input class="btn btn-desencriptar" id="btn-desencriptar" type="button" value="Desencriptar">
+        </div>
+      </form>
+      <section class="desencriptar">
+        <div class="desencriptar__mensaje">
+          <img class="desencriptar__mensaje__img" src="img/Candado Tecnologico.png" alt="Candado">
+          <h2 class="desencriptar__mensaje__titulo">Escriba en el cuadro para desbloquear</h2>
+          <p class="desencriptar__mensaje__parrafo"></p>
+        </div>
+        <div class="desencriptar__resultado">
+          <textarea class="frase-encriptada" id="frase-encriptada" readonly=""></textarea>
+          <input class="btn btn-copiar" id="btn-copiar" type="button" value="Copiar">
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="copyright"><span class="heart"></span> ©Nicolás Muñoz Bacián. Prácticante. Diseño Gráfico. 2024.</p>
+      <div class="links__container">
+       
+        <a class="link" href="https://github.com/Nicolas-Munoz-Bacian">
+          <img src="img/Github icono.png" alt="Icono Github" width="30px" height="30px">
+          <i class=></i>
+        </a>
+      </div>
+    </footer>
+    </div>
+    <script src="app.js"></script>
+  
+  </body></html>
